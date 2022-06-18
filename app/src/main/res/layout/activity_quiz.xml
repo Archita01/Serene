@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_bg"
+    tools:context=".QuizActivity">
+    <ImageButton
+        android:id="@+id/hamburgerImageButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_hamburger" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hamburgerImageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Kindly fill in the following details correctly "
+
+            android:textAlignment="center"
+            android:textColor="#DD7D5D"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Which company do you work at?"
+
+                android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/ans1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/answer_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="9dp"
+                    android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="@string/q2"
+                android:textSize="20dp"/>
+
+
+            <RadioGroup
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:layout_marginStart="40dp">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/text2_color"
+                    android:textColor="@color/text2_color"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text2_color"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textStyle="bold"
+                    android:textColor="@color/text2_color" />
+                <RadioButton
+                    android:id="@+id/others"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text2_color"
+                    android:layout_weight="1"
+                    android:text="Others"
+                    android:textColor="@color/text2_color" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/q3"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp">
+
+                <RadioButton
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:text="Product"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/text2_color"
+                    android:textColor="@color/text2_color"/>
+
+                <RadioButton
+                    android:id="@+id/service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text2_color"
+                    android:layout_weight="1"
+                    android:text="Service"
+                    android:textStyle="bold"
+                    android:textColor="@color/text2_color" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:text="@string/q4"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp">
+
+                <RadioButton
+                    android:id="@+id/no_wfh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/text2_color"
+                    android:textColor="@color/text2_color"/>
+
+                <RadioButton
+                    android:id="@+id/yes_wfh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text2_color"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textStyle="bold"
+                    android:textColor="@color/text2_color" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/q5"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/ans5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:background="@drawable/answer_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/q6"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/ans6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:background="@drawable/answer_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                 android:text="@string/q7"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/ans7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:background="@drawable/answer_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="When did you start working for the company?"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/q8"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/ans8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:background="@drawable/answer_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/q9"
+                android:textColor="#DD7D5D"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/ans9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:background="@drawable/answer_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:textColor="@color/black"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginBottom="200dp"
+                android:background="@drawable/login_btn_bg"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="SUBMIT"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/text2_color"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordInputField" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

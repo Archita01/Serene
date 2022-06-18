@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1004423996214",
+    "firebase_url": "https://serene-19532-default-rtdb.firebaseio.com",
+    "project_id": "serene-19532",
+    "storage_bucket": "serene-19532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004423996214:android:3ce82772b91d8791528997",
+        "android_client_info": {
+          "package_name": "com.example.serene"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004423996214-fu9jej7a2uf12tupf86ekoap37a253kd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serene",
+            "certificate_hash": "09be086b3c27a881c21533213b854aa8c38d8662"
+          }
+        },
+        {
+          "client_id": "1004423996214-um41oj5aao933gbt8nds089a6djqju74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4urgKyAQ2cZDsM-DNDNyEbLUU1NkNGnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004423996214-um41oj5aao933gbt8nds089a6djqju74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

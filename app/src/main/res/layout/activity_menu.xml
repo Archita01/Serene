@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+    <TextView
+        android:id="@+id/hi_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="10dp"
+        android:text="Hello, There!"
+        android:textAlignment="center"
+        android:textColor="#EC5F35"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi_there"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat_alternates_bold"
+
+                android:textSize="20dp"
+                android:text="Home"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+
+
+                android:text="About"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Facts"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Schedule"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Activities"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Profile"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="Log Out"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#EC5F35"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

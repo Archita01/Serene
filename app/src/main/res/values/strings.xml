@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Serene</string>
+    <string name="default_web_client_id_auth">1004423996214-um41oj5aao933gbt8nds089a6djqju74.apps.googleusercontent.com</string>
+    <string name="q2">What gender do you identify yourself as?</string>
+    <string name="q3">What kind of company do you work for?</string>
+    <string name="q4">Do you work from home?</string>
+    <string name="q5">On a range of 0-5 what is your range of seniority in the company</string>
+    <string name="q6">How many hours do you work on a daily basis?</string>
+    <string name="q7">On a scale of 1-10 how much are you tired everyday?</string>
+    <string name="q8">Month?</string>
+    <string name="q9">Day?</string>
+
+</resources>
